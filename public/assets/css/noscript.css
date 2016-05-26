@@ -1,0 +1,10 @@
+nav.transparent {
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+nav.transparent a div#logo {
+    background-image: url("../share/images/logo/siek-black.png");
+}
+nav.transparent div.vertical ul li a {
+    color: #666666;
+}

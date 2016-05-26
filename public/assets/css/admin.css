@@ -1,0 +1,47 @@
+/* Login */
+section#login {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+section#login img,
+section#login input {
+    text-align: center;
+}section#login form {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+section#login input::-webkit-input-placeholder {
+    transition: all ease-in-out 0.15s;
+}
+section#login input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/* Media queries */
+@media screen and (min-width: 0) {
+    section#login div.row:nth-of-type(1) img {
+        max-width: 125px;
+    }
+    section#login div.row:nth-of-type(2) img {
+        max-width: 275px;
+    }
+}
+@media screen and (min-width: 480px) {
+    section#login div.row:nth-of-type(1) img {
+        max-width: 165px;
+    }
+    section#login div.row:nth-of-type(2) img {
+        max-width: 360px;
+    }
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 992px) {
+
+}
+@media screen and (min-width: 1200px) {
+
+}

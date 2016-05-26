@@ -1,0 +1,12 @@
+section h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+section h3 {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+section p {
+    text-align: left;
+}

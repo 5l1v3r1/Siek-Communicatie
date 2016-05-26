@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /assets/
+Disallow: /share/plugins/
+
+Sitemap: http://siek-communicatie.paradoxis.nl/sitemap.xml

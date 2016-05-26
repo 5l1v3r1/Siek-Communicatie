@@ -1,0 +1,388 @@
+/* Imports */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+/* Body presets */
+html,
+body {
+    height: 100% !important;
+    min-height: 100% !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* DIE, FILTHY OUTLINES */
+*,
+*:focus,
+*:active,
+*:hover,
+*:visited {
+    outline: 0;
+}
+
+/* Litebox css */
+.litebox-overlay {
+    z-index: 99999;
+}
+
+/* Bootstrap extension */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin-right: -4px;
+}
+
+
+/* Navigation */
+nav {
+    transition: all ease-in-out .2s;
+    border-bottom: 1px solid #cccccc;
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+}
+nav a {
+    transition: all ease-in-out .2s;
+}
+nav a div#logo {
+    opacity: 0.95;
+    transition: all ease-in-out .2s;
+    background-image: url("/share/assets/images/siek-communicatie/logo/png/text_black.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 185px;
+    height: 50px;
+    margin: 30px;
+}
+nav a:hover,
+nav a:hover div#logo {
+    text-decoration: none;
+    opacity: 0.5;
+}
+nav div.vertical {
+    padding: 0;
+}
+nav div.vertical ul {
+    text-align: right;
+    padding-bottom: 0;
+    padding-right: 45px;
+}
+nav div.vertical ul li {
+    list-style: none;
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    padding: 0 30px;
+}
+nav div.vertical ul li a {
+    color: #666666;
+}
+nav.transparent {
+    background: transparent;
+    border-bottom: 0;
+}
+nav.transparent a div#logo {
+    background-image: url("/share/assets/images/siek-communicatie/logo/png/text_white.png");
+}
+nav.transparent div.vertical ul li a {
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    width: 100%;
+    color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+header div.hero {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -99999999;
+    background-size: cover;
+    background: no-repeat center top;
+}
+header div.hero {
+    background-position: top;
+    background-image: url("/assets/images/header-small.jpg");
+}
+header div.vertical h1 {
+    display: none;
+}
+header div.vertical h2 {
+    /*text-transform: uppercase;*/
+    padding: 0;
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+header div.vertical a.arrow {
+
+    /* Icon size */
+    font-size: 50px;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ffffff;
+
+    /* Make it centered */
+    vertical-align: bottom;
+    display:inline-block;
+    text-align: center;
+
+    /* Transitions for hover */
+    transition: all ease-in-out .15s;
+}
+header div.vertical a.arrow:hover {
+    opacity: 0.5;
+}
+header div.vertical a.arrow i {
+    padding-left: 11px;
+}
+header noscript div {
+    margin-bottom: 12px;
+    margin-top: -10px;
+}
+
+/* Sections */
+main {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+section {
+    width: 100%;
+    padding: 100px 0;
+    background: #ffffff;
+}
+section h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 25px;
+    opacity: 0.95;
+}
+section h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 25px;
+    opacity: 0.95;
+}
+section h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.95;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+section h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.95;
+    margin-top: 0;
+}
+section p,
+section article {
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.95;
+}
+section p span.li:before,
+section p span.tab:before,
+section article span.li:before,
+section article span.tab:before {
+    position: absolute;
+    content: "• ";
+    font-size: 30px;
+    margin-left: -20px;
+    margin-top: -8px;
+}
+
+section p span.li,
+section p span.tab,
+section article span.li,
+section article span.tab {
+    margin-top: 5px;
+    margin-left: 35px;
+    display: inline-block;
+}
+
+/* Footer */
+main + footer {
+    padding: 30px 0;
+    width: 100%;
+    background: #2c3e50;
+    color: #dddddd;
+}
+main + footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+main + footer div#paradoxis p {
+    margin: 0;
+}
+main + footer div#paradoxis p:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+main + footer div#paradoxis a {
+    display: inline-block;
+    transition: all ease-in-out .15s;
+    text-decoration: none;
+}
+main + footer div#paradoxis a:hover {
+    color: #dddddd;
+}
+main + footer div#paradoxis a p {
+    padding-bottom: 5px;
+}
+main + footer div#paradoxis a div {
+    width: 150px;
+    height: 75px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all ease-in-out .20s;
+}
+main + footer div#paradoxis a div#paradoxis-blue {
+    opacity: 1;
+    margin-top: -85px;
+    background-image: url("/share/assets/images/paradoxis/logo/svg/icon_blue.svg");
+}
+main + footer div#paradoxis a div#paradoxis-white {
+    opacity: 0;
+    background-image: url("/share/assets/images/paradoxis/logo/svg/icon_white.svg");
+}
+main + footer div#paradoxis a:hover div#paradoxis-blue {
+    opacity: 0;
+}
+main + footer div#paradoxis a:hover div#paradoxis-white {
+    opacity: 1;
+}
+
+/* Vertical middle content */
+.vertical-wrap,
+.vertical-wrap {
+    display: table !important;
+}
+.vertical-wrap div.vertical,
+.vertical-wrap div.vertical {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    float: none;
+    width: 100%;
+}
+
+/* Editor */
+.editor textarea {
+    max-width: 100%;
+    min-height: 200px;
+}
+
+/* More than operators */
+@media screen and (min-width: 0) {
+    .col-centered {
+        margin-right: 0;
+    }
+
+    header div.vertical h2 {
+        font-size: 3rem;
+    }
+    header div.vertical a.arrow {
+        font-size: 41px;
+        line-height: 85px;
+        height: 85px;
+        width: 85px;
+    }
+
+    nav div.vertical ul {
+        padding-top: 10px;
+        padding-right: 25px;
+    }
+    nav div.vertical ul li {
+        padding: 0;
+    }
+    nav a div#logo {
+        width: 138.75px;
+        height: 60px;
+        margin: 22.5px;
+        margin-right: 0px;
+    }
+
+    section p,
+    section article {
+        font-size: 1.5rem;
+    }
+
+    main + footer div.col-sm-8 {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    main + footer div.col-sm-4 {
+        padding-top: 15px;
+    }
+    main + footer div.col-sm-4 a div {
+        padding-top: 15px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .col-centered {
+        margin-right: -4px;
+    }
+
+    header div.vertical h2 {
+        font-size: 5rem;
+    }
+    header div.vertical a.arrow {
+        font-size: 50px;
+        line-height: 100px;
+        height: 100px;
+        width: 100px;
+    }
+
+
+    nav div.vertical ul {
+        padding-top: 0px;
+    }
+    nav div.vertical ul li {
+        padding: 0 30px;
+    }
+    nav a div#logo {
+        width: 185px;
+        height: 50px;
+        margin: 30px;
+    }
+
+    section p,
+    section article {
+        font-size: 1.75rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    main + footer div.col-sm-8 {
+        text-align: left;
+        padding-bottom: 0;
+    }
+    main + footer div.col-sm-4 {
+        padding-top: 0;
+    }
+    main + footer div.col-sm-4 a div {
+        padding-top: 0;
+    }
+}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {}
